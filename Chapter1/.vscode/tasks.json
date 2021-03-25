@@ -13,7 +13,7 @@
                 "-g3",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}.com"
             ],
             "group": "build",
  
@@ -45,7 +45,7 @@
                 "-g3",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}.com"
             ],
             "group": "build",
  
@@ -75,7 +75,7 @@
  
             "label": "execute",
  
-            "command": "cd ${fileDirname} &&./${fileBasenameNoExtension}",
+            "command": "cd ${fileDirname} &&./${fileBasenameNoExtension}.com",
  
             "group": "test"
  
