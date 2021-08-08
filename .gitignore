@@ -3,3 +3,4 @@ CMakeFiles
 *.txt
 *.cmake
 Makefile
+build
