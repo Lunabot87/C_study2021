@@ -1,4 +1,4 @@
-#include "stdafx.h"
+//#include "stdafx.h"
 #include <iostream>
 //여백은 컴파일시 무시됨
 using namespace std;

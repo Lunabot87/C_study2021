@@ -16,7 +16,6 @@
                 "${fileDirname}/${fileBasenameNoExtension}.com"
             ],
             "group": "build",
- 
             // 컴파일 시 에러를 편집기에 반영
             //참고: https://code.visualstudio.com/docs/editor/tasks#_defining-a-problem-matcher
  
@@ -27,6 +26,34 @@
                 ],
                 "pattern": {
                    // The regular ｅxpression.
+                   //Example to match: helloWorld.c:5:3: warning: implicit declaration of function 'prinft'
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        // Cmake compile
+        {
+            "label": "compile for C++ at Cmake",
+            "command": "cd ${fileDirname} && cmake . && make",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            //컴파일시 에러를 편집기에 반영
+            //참고:   https://code.visualstudio.com/docs/editor/tasks#_defining-a-problem-matcher
+
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceRoot}"
+                ],
+                "pattern": {
+                    // The regular expression. 
                    //Example to match: helloWorld.c:5:3: warning: implicit declaration of function 'prinft'
                     "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning error):\\s+(.*)$",
                     "file": 1,
@@ -75,9 +102,12 @@
  
             "label": "execute",
  
-            "command": "cd ${fileDirname} &&./${fileBasenameNoExtension}.com",
+            "command": "cd ${fileDirname} &&./${fileDirnameBasename}",
  
-            "group": "test"
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
  
         }
     ]

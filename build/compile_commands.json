@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/lunabot/C_study2021/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7    -g   -std=gnu++1z -o CMakeFiles/C_study2021.com.dir/C_1.11.cpp.o -c /home/lunabot/C_study2021/C_1.11.cpp",
+  "file": "/home/lunabot/C_study2021/C_1.11.cpp"
+},
+{
+  "directory": "/home/lunabot/C_study2021/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7    -g   -std=gnu++1z -o CMakeFiles/C_study2021.com.dir/C_1.12.cpp.o -c /home/lunabot/C_study2021/C_1.12.cpp",
+  "file": "/home/lunabot/C_study2021/C_1.12.cpp"
+},
+{
+  "directory": "/home/lunabot/C_study2021/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7    -g   -std=gnu++1z -o CMakeFiles/C_study2021.com.dir/add.cpp.o -c /home/lunabot/C_study2021/add.cpp",
+  "file": "/home/lunabot/C_study2021/add.cpp"
+}
+]
