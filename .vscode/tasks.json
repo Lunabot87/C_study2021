@@ -102,7 +102,7 @@
  
             "label": "execute",
  
-            "command": "cd ${fileDirname} &&./${fileDirnameBasename}",
+            "command": "cd ${fileDirname} &&./${fileDirnameBasename}.com",
  
             "group": {
                 "kind": "test",
